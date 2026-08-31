@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <title>컴포넌트 가이드</title>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- favicon -->
+
+  <!-- //favicon -->
+
+  <link rel="stylesheet" href="./resource/css/reset.css">
+  <link rel="stylesheet" href="./resource/css/font.css">
+  <link rel="stylesheet" href="./resource/css/lib/bootstrap.min.css">
+
+  <link rel="stylesheet" href="./resource/css/common.css">
+  <link rel="stylesheet" href="./resource/css/main.css">
+  <link rel="stylesheet" href="./resource/css/sub.css">
+
+  <!-- style -->
+
+  <style>
+    b {
+      margin-left: 10px;
+    }
+
+    h1.test-title {
+      font-size: 30px;
+      margin: 50px 50px;
+    }
+
+    h2.test-title {
+      margin: 0 0 20px;
+      font-size: 22px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #888;
+    }
+
+    h3.test-title {
+      margin: 0 0 10px;
+      font-size: 18px;
+    }
+
+    .guide-section {
+      border-top: 2px solid #ddd;
+      padding: 50px;
+    }
+
+    .guide-section-sub+.guide-section-sub {
+      margin-top: 20px;
+      border-top: 1px dashed #ddd;
+      padding-top: 20px;
+    }
+
+    .test-code {
+      border: 2px solid #ddd;
+      margin: 10px 0;
+      background: #101737;
+      padding: 10px;
+    }
+
+    .test-code:before {
+      content: 'ex.';
+      display: block;
+      font-size: 12px;
+    }
+
+    .test-description {
+      margin: 10px 0;
+      padding: 0 12px;
+    }
+
+    .test-links {
+      margin-left: -20px;
+    }
+
+    .test-links:after {
+      content: '';
+      display: table;
+      clear: both;
+    }
+
+    .test-links a {
+      display: block;
+      margin: 20px 0 0 20px;
+      float: left;
+      padding: 5px 15px;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      background: #333;
+    }
+
+    .test-links+h2.test-title {
+      margin-top: 20px;
+    }
+  </style>
+  <!-- //style -->
+</head>
+
+<body>
+  <div id="wrap">
+    <div style="display: table"></div>
+
+    <h1 class="test-title">Component</h1>
+
+
+
+
+
+    <div class="guide-section guide-section--title">
+      <style>
+        .guide-section--button .ui-basic-button {
+          display: inline-flex;
+          vertical-align: top;
+          margin: 10px;
+        }
+
+        .guide-section--button .ui-basic-button:not(.ui-basic-button--icon-only) {
+          width: auto;
+        }
+      </style>
+      <h2 class="test-title">title</h2>
+
+      
+
+      <div class="guide-section-sub">
+        <h3 class="test-title">margin-bottom: 3rem; font-size: 3rem; font-weight: 600;</h3>
+        <div class="contents-core__title">contents-core__title</div>
+      </div>
+
+     
+
+    </div>
+
+
+
+    <div class="guide-section guide-section--button">
+      <style>
+        /* button {
+          margin: 2rem;
+        } */
+
+        .login-first__bottom--bottom {
+          display: flex;
+        }
+
+        .login-first__bottom--bottom button {
+          display: flex;
+          -ms-display: flexbox;
+          display: -moz-box;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          align-items: center;
+          justify-content: center;
+          flex: 1;
+          height: 18.5rem;
+          margin-top: 10px;
+          font-size: 5rem;
+          color: #333333;
+          border-radius: 2rem;
+          border: 0.3rem solid #e9eaec;
+          background: #ffffff;
+        }
+
+        .login-first__bottom--bottom button+button {
+          margin-left: 4rem;
+        }
+      </style>
+      <h2 class="test-title">button</h2>
+      <div class="guide-section-sub">
+        <h3 class="test-title">Default</h3>
+        <button type="button" class="ui-button ui-button__bg-blue">경력개발 프로그램 신청하기</button>
+      </div>
+
+      <div class="guide-section-sub">
+        <h3 class="test-title">ui-buttons :: ui-button__width-m</h3>
+        <div class="ui-buttons">
+          <button type="button" class="ui-button ui-button__width-m ui-button__border-gray">목 록</button>
+          <button type="button" class="ui-button ui-button__width-m ui-button__bg-blue">수 정</button>
+          <button type="button" class="ui-button ui-button__width-m ui-button__border-gray ui-button__bg-gray">삭 제</button>
+      </div>
+  
+      </div>
+      
+
+
+
+    </div>
+
+
+
+  </div>
+
+  <!-- form -->
+  <div class="guide-section guide-section--form">
+    <style>
+      .ui-form .ui-button {
+        margin-top: 0px;
+      }
+    </style>
+
+    <h2 class="test-title">form</h2>
+    <div class="guide-section-sub">
+      <h3 class="test-title">input</h3>
+
+      <div class="ui-form form-input">
+        <input type="text" name="" value="" class="ui-input" placeholder="검색어를 입력해주세요.">
+      </div>
+
+    </div>
+
+  
+
+    <div class="guide-section-sub">
+      <h3 class="test-title">select</h3>
+      <div class="ui-form form-select">
+        <select name="searchType" class="select ui-select">
+          <option value="all">전체</option>
+          <option value="subject">제목</option>
+          <option value="contents">내용</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="guide-section-sub">
+      <h3 class="test-title">search-box</h3>
+
+      <div class="search-box">
+        <div class="search-box__select ui-form form-select">
+          <select name="searchType" class="select ui-select">
+            <option value="all">전체</option>
+            <option value="subject">제목</option>
+            <option value="contents">내용</option>
+          </select>
+        </div>
+        <div class="search-box__right">
+          <div class="ui-form form-input search-box__input">
+            <input type="text" name="searchKeyword" value="" class="ui-input" placeholder="검색어를 입력해주세요.">
+            <button type="submit" class="button-search"><i></i></button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="guide-section-sub">
+      <h3 class="test-title">checkbox</h3>
+      <div class="ui-checkbox__list">
+        <div class="ui-checkbox__inner">
+            <div class="ui-checkbox-block">
+                <input type="checkbox" class="ui-checkbox" id="checkbox1" checked="">
+                <label for="checkbox1" class="ui-label">
+                  <span class="ui-checkbox-object"></span>
+                  <span class="ui-label__text">약관 전체동의</span>
+                </label>
+              </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="guide-section-sub">
+      <h3 class="test-title">radio</h3>
+      <div class="ui-radio__list">
+        <div class="ui-radio__inner">
+            <div class="ui-radio-block">
+                <input type="radio" class="ui-radio" id="radio1" checked="">
+                <label for="radio1" class="ui-label">
+                  <span class="ui-radio-object"></span>
+                  <span class="ui-label__text">약관 전체동의</span>
+                </label>
+              </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+  <!-- form -->
+
+  <!-- modal -->
+  <div class="guide-section guide-section--modal">
+    <style>
+      .modal-buttons .ui-button {
+        margin: 0;
+      }
+    </style>
+    <h2 class="test-title">modal</h2>
+
+    <div class="guide-section-sub">
+      <h3 class="test-title">Default</h3>
+      <button type="submit" class="ui-button ui-button__certi" data-toggle="modal" data-target="#test1">인증요청</button>
+      <!-- 모달 -->
+      <div class="modal fade" id="test1" tabindex="-1" aria-labelledby="test1Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-auto ">
+          <div class="modal-content modal-content__email">
+            <div class="modal-body">
+
+              <!-- 본인 인증 성공일때 case -->
+              <div class="modal-core">
+                <div class="modal-text text-center mb-90">
+                  본인 인증이 완료되었습니다.
+                </div>
+                <div class="modal-text__small text-center">
+                  ‘확인’ 버튼을 누르시면 <br>
+                  회원가입 화면으로 이동합니다.
+                </div>
+              </div>
+              <!-- //본인 인증 성공일때 case -->
+
+              <!-- 본인 인증 실패일때 case -->
+              <div class="modal-core" style="display: none;">
+                <div class="modal-text text-center mb-90">
+                  본인 인증에 실패하였습니다. <br>
+                  이름과 전화번호를 확인하신 후 <br>
+                  다시 시도해 주세요.
+                </div>
+                <div class="modal-text__small text-center">
+                  ‘확인‘ 버튼을 누르시면 <br>
+                  이전 화면으로 돌아 갑니다.
+
+                </div>
+              </div>
+              <!-- //본인 인증 실패일때 case -->
+
+              <div class="modal-buttons">
+                <button type="button" class="ui-button ui-button__bg-blue" data-dismiss="modal">확인</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!-- //모달 -->
+    </div>
+
+    <div class="guide-section-sub">
+      <h3 class="test-title">small :: 클래스 modal-content에 modal-content__s 추가</h3>
+      <button type="submit" class="ui-button ui-button__certi" data-toggle="modal"
+        data-target="#modal-content__s">인증요청</button>
+      <!-- 모달 -->
+      <div class="modal fade" id="modal-content__s" tabindex="-1" aria-labelledby="modalCertiLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-auto ">
+          <div class="modal-content modal-content__s modal-content__email">
+            <div class="modal-body">
+
+              <!-- 본인 인증 성공일때 case -->
+              <div class="modal-core">
+                <div class="modal-text text-center mb-90">
+                  본인 인증이 완료되었습니다.
+                </div>
+                <div class="modal-text__small text-center">
+                  ‘확인’ 버튼을 누르시면 <br>
+                  회원가입 화면으로 이동합니다.
+                </div>
+              </div>
+              <!-- //본인 인증 성공일때 case -->
+
+              <!-- 본인 인증 실패일때 case -->
+              <div class="modal-core" style="display: none;">
+                <div class="modal-text text-center mb-90">
+                  본인 인증에 실패하였습니다. <br>
+                  이름과 전화번호를 확인하신 후 <br>
+                  다시 시도해 주세요.
+                </div>
+                <div class="modal-text__small text-center">
+                  ‘확인‘ 버튼을 누르시면 <br>
+                  이전 화면으로 돌아 갑니다.
+
+                </div>
+              </div>
+              <!-- //본인 인증 실패일때 case -->
+
+              <div class="modal-buttons modal-buttons__sticky">
+                <button type="button" class="ui-button ui-button__border-blue" data-dismiss="modal">취소</button>
+                <button type="button" class="ui-button ui-button__bg-blue">간병 종료</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!-- //모달 -->
+    </div>
+
+
+
+  </div>
+  <!-- //modal -->
+
+
+
+  <div class="guide-section guide-section--date">
+    <style>
+      .guide-section--date .guide-section-sub>.ui-input-block,
+      .guide-section--date .guide-section-sub>.form-flex {
+        margin-top: 20px;
+      }
+    </style>
+    <h2 class="test-title">ETC</h2>
+    <div class="guide-section-sub">
+      <h3 class="test-title">line-gray</h3>
+
+      <div class="line-gray"></div>
+
+      
+    </div>
+  </div>
+
+
+
+
+
+
+
+  </div>
+
+
+  </div>
+
+
+
+</body>
+
+<script src="./resource/js/lib/jquery-1.12.4.min.js"></script>
+<script src="./resource/js/lib/bootstrap.bundle.min.js"></script>
+<script src="./resource/js/sub.js"></script>
+
+</html>

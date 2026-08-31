@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>서울대 학생생활문화원</title>
+	<!--<link rel="shortcut icon" href="./resource/image/common/favicon.png" type="image/x-icon" />-->
+	<link rel="stylesheet" href="../resource/css/ux-common.css">
+    <link rel="stylesheet" href="../resource/css/sub.css">
+    <link rel="stylesheet" href="../resource/css/admin.css">
+</head>
+<body>
+	<div class="wrap">
+		<div class="skip-nav">
+			<a href="#contents" class="skip_navi sn_sub">본문 바로 가기</a>
+			<a href="#gnb" class="skip_navi sn_ct">대메뉴 바로 가기</a>
+		</div>
+		<header>
+            <div class="header__inner">
+				<nav>
+					<p class="nav__name">
+                        <span>관리자</span>님
+                    </p>
+                    <div class="btn-wrap">
+                        <button type="button" class="nav__btn">
+                            로그아웃
+                        </button>
+                    </div>
+					<a href="">
+                        <span>
+                            사용자페이지
+                        </span>
+                    </a>
+				</nav>
+                <h1 class="header__logo">
+                    <a href="../index.html">
+                        <span>
+							<img src="../resource/image/common/logo.png" alt="인문대 학생생활문화원">
+						</span>
+                    </a>
+                </h1>
+                <div class="gnb-wrap">
+                    <div class="gnb" id="gnb">
+                        <ul>
+                            <li>
+                                <a href="" class="gnb__depth--01">프로그램신청</a>
+                                <ul class="gnb__depth--02">
+                                    <li>
+                                        <a href="AD_RE_01_list.html">경력개발프로그램신청</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="" class="gnb__depth--01">게시판</a>
+                                <ul class="gnb__depth--02">
+                                    <li>
+                                        <a href="AD_BR_01_list.html">공지사항</a>
+                                    </li>
+                                    <li>
+                                        <a href="AD_BR_02_list.html">사진첩</a>
+                                    </li>
+                                    <li>
+                                        <a href="AD_BR_03_list.html">참여후기</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="gnb-hover-bar"></div>
+                </div>
+            </div>
+        </header>
+        <section class="container">
+			<section class="container__inner">
+				<section class="content">
+					<section class="content__inner">
+
+                        <div class="layout-cont layout-cont--full">
+                            <div class="layout-cont__inner layout-cont--row">
+                                
+                                <div class="layout-cont__left">
+                                    <div class="lnb">
+                                        <p class="lnb__tit">ADMIN</p>
+                                        <ul class="lnb__list">
+                                            <li class="lnb__item">
+                                                <a href="javascript:void(0)">프로그램 신청</a>
+                                                <ul class="dep3Item">
+                                                    <li>
+                                                        <a href="AD_RE_01_list.html">경력개발프로그램신청</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="lnb__item is-active is-open">
+                                                <a href="javascript:void(0)">게시판</a>
+                                                <ul class="dep3Item" style="display:block;">
+                                                    <li>
+                                                        <a href="AD_BR_01_list.html">공지사항</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="AD_BR_02_list.html">사진첩</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="AD_BR_03_list.html">참여후기</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="layout-cont__right">
+                                    <div class="layout-cont__view">
+                                        <p class="cont-view__tit">공지사항</p>
+
+										<div class="board-list">
+                                            <div class="table-wrap table-wrap__ver table-wrap__fixed">
+                                                <table class="table ">
+                                                    <caption>경력개발 프로그램 신청 테이블</caption>
+                                                    <colgroup>
+                                                        <col style="width:180px">
+                                                        <col style="width:auto">
+                                                        <col style="width:180px">
+                                                        <col style="width:auto">
+                                                    </colgroup>
+                                                    <tbody>
+														<tr>
+                                                            <th>공지여부</th>
+                                                            <td class="hasForm">
+																<div class="ui-form ui-radio">
+																	<div class="ui-form--row">
+																		<label for="radio1" class="ui-form-block ui-form--row align-center">
+																			<input type="radio" name="radio_kind1" class="ui-input ui-radio-custom" id="radio1"> 
+																			<span class="ui-radio-custom__span"></span>공지
+																		</label>
+																		<label for="radio2" class="ui-form-block ui-form--row align-center">
+																			<input type="radio" name="radio_kind1" class="ui-input ui-radio-custom" id="radio2"> 
+																			<span class="ui-radio-custom__span"></span>비공지
+																		</label>
+																	</div>
+																</div>
+															</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>구분</th>
+                                                            <td class="hasForm">
+																<div class="ui-form">
+																	<label for="">
+																		<select name="" id="" class="ui-select ui-select__width-225">
+																			<option value="">[01631] 코오롱모터스</option>
+																			<option value="">1</option>
+																			<option value="">2</option>
+																		</select>
+																	</label>
+																</div>
+															</td>
+                                                        </tr>
+														<tr>
+                                                            <th>제목</th>
+                                                            <td class="hasForm">
+                                                                <div class="cell-wrap">
+                                                                    <div class="cell-col w-100">
+                                                                        <div class="ui-form form-input">
+                                                                            <input type="text" name="" value="" class="ui-input ui-input__width-100" placeholder="2022-2학기 생생원 <버크만 심리검사> 신청 (선착순모집)">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>작성자</th>
+                                                            <td class="hasForm">
+																<div class="ui-form">
+																	<label for="">
+																		<input type="text" class="ui-input ui-form-width--m" placeholder="1058533249" value="관리자">
+																	</label>
+																</div>
+															</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>첨부파일</th>
+                                                            <td>
+                                                                <a href="#" class="ui-underline" target="_blank">첨부파일.확장자</a>
+                                                            </td>
+                                                        </tr>
+														<tr>
+                                                            <th>내용</th>
+                                                            <td >
+																에디터 사용
+
+															</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+
+
+
+                                        <div class="board-bottom">
+                                            <div class="board-bottom__inner">
+                                                <div class="ui-buttons">
+                                                    <button type="button" class="ui-button ui-button__bg-blue" onclick="location.href='AD_RE_01_view.html'">수정</button>
+                                                    <button type="button" class="ui-button ui-button__border-gray ui-button__bg-gray">삭제</button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </section>
+				</section>
+			</section>
+		</section>
+
+	</div>
+
+	<script type="text/javascript" src="../resource/js/lib/jquery/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="../resource/js/lib/jquery/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../resource/js/lib/moment.min.js"></script>
+    <script type="text/javascript" src="../resource/js/lib/bootstrap/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../resource/js/lib/bootstrap/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="../resource/js/lib/bootstrap/bootstrap-datepicker.js"></script>
+    <script type="text/javascript" src="../resource/js/lib/bootstrap/bootstrap-datepicker.kr.js"></script>
+	<script type="text/javascript" src="../resource/js/lib/TweenMax.min.js"></script>
+	<script type="text/javascript" src="../resource/js/lib/aos.js"></script>
+	<script type="text/javascript" src="../resource/js/common.js"></script>
+	<script type="text/javascript" src="../resource/js/main.js"></script>
+</body>
+</html>
